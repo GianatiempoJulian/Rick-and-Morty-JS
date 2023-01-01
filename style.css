@@ -1,0 +1,255 @@
+/* General properties*/
+
+body,
+html {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.hdqwalls.com/wallpapers/space-planets-drawing-4k-kf.jpg");
+}
+
+main {
+    height: 100%;
+}
+
+
+/* Nav properties*/
+
+nav {
+    background: rgba(112, 112, 112, 0.544);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 30px;
+    margin: 0;
+    gap: 10px;
+}
+
+nav ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+nav ul li a,
+nav ul li p {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li p {
+    margin: 0;
+}
+
+
+/*Index properties*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    color: aliceblue;
+    height: 70vh;
+}
+
+.social-container {
+    display: flex;
+}
+
+.social-container ul {
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0px;
+}
+
+.social-container ul li a img {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.btn-container a {
+    padding: 20px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(32, 75, 218);
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* Character/Locations general properties */
+
+.container-character,
+.container-location {
+    display: grid;
+    grid-template-columns: repeat(6, 15%);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    color: aliceblue;
+    background: rgba(112, 112, 112, 0.544);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+}
+
+
+/* Character properties */
+
+.char-img {
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 1000px;
+}
+
+.card h1 {
+    font-size: 16px;
+}
+
+.Alive {
+    border: 10px solid rgba(28, 200, 71, 0.27);
+}
+
+.Dead {
+    border: 10px solid rgba(249, 0, 0, 0.27);
+}
+
+.unknown {
+    border: 10px solid rgba(251, 251, 251, 0.27);
+}
+
+#btn-more-info {
+    padding: 10px;
+    background-color: rgb(32, 75, 218);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Locations properties */
+
+#location-h1 {
+    padding: 25px;
+    font-size: 20px;
+}
+
+
+/* Modal properties */
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.modal-container button {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    cursor: pointer;
+    z-index: 100;
+    color: #fff;
+    background: none;
+    border: none;
+}
+
+.modal-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border-radius: 50px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+}
+
+.modal-img {
+    height: 200px !important;
+}
+
+.modal-card ul {
+    padding: 0;
+    list-style: none;
+}
+
+.modal-card ul li {
+    font-size: 20px;
+}
+
+.modal-card ul li p {
+    display: inline;
+}
+
+.modal-card ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+.bold-information {
+    font-weight: 800;
+}

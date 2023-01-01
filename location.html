@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Rick and Morty</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Rick&Morty</a>
+                </li>
+                <li>
+                    <a id="aCharacter" href="character.html">Characters</a>
+                </li>
+                <li>
+                    <a id="aLocation" href="location.html">Locations</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-location" id="loca" info-container>
+
+        </div>
+        <!--Pagination-->
+        <nav aria-label="Page navigation example" style="
+         display: flex;
+         flex-direction: row;
+         margin-top: 20px;
+         justify-content: center;
+         align-items: center;
+         ">
+            <ul class="pagination">
+                <li class="page-item" id="previous"><a class="page-link">Previous</a></li>
+                <li class="page-item" id="next"><a class="page-link">Next</a></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+
+</html>
